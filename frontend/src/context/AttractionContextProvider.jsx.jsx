@@ -1,11 +1,11 @@
 import React from 'react'
-import { attractions } from "../assets/assets";
+import { activities, attractions, planTrip } from "../assets/assets";
 import { AttractionContext } from "./AttractionContext";
 
 const AttractionContextProvider = ({children}) => {
 
     const value = {
-        attractions,
+        attractions, activities, planTrip
     }
 
     return (

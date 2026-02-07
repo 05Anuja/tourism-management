@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const AttractionItem = ({ id, image, name, description }) => {
+const AttractionItem = ({  image, name, description }) => {
   return (
     <Link
-      to={`/attraction/${id}`}
+      to='/explore'
       className="group block text-gray-700"
     >
       {/* Image wrapper */}
