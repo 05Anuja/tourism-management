@@ -19,63 +19,197 @@ export const assets = {
 }
 
 export const attractions = [
-    {
-        id: 1,
-        name: "Ganapatipule Beach",
-        description: "Ganpatipule Beach is one of the most serene and unspoiled beaches of Ratnagiri, known for its clean shoreline and breathtaking views of the Arabian Sea. The beach is famous for the Ganpatipule Temple, located just steps away, making it a perfect blend of spirituality and natural beauty. Visitors can enjoy peaceful walks, stunning sunsets, and a calm coastal atmosphere.",
-        image: [Ganapatipule_Beach],
-        mostlyVisited: true
-    },
-    {
-        id: 2,
-        name: 'Jaigad Fort',
-        description: "Jaigad Fort stands proudly overlooking the Arabian Sea and the Shastri River, offering panoramic views of the Konkan coastline. This historic sea fort reflects the rich Maratha heritage and is a popular spot for history lovers and photographers. Its strong walls, ancient structures, and scenic surroundings make it an ideal destination for exploration and sightseeing.",
-        image: [Jaigad_Fort],
-        mostlyVisited: true
-    },
-    {
-        id: 3,
-        name: "Aare Ware Beach",
-        description: "Aare Ware Beach is a hidden gem near Ratnagiri, known for its twin beaches and mesmerizing sunset views. Surrounded by hills and lush greenery, this beach offers a peaceful escape away from crowded tourist spots. The elevated viewpoints provide spectacular vistas of the coastline, making it a favorite location for nature lovers and photographers.",
-        image: [Aare_Ware_Beach],
-        mostlyVisited: true
-    },
-    {
-        id: 4,
-        name: "Thibaw Palace",
-        description: "Thibaw Palace is a historical landmark that served as the residence of King Thibaw, the last ruler of Burma, during his exile. Built during the British era, the palace showcases colonial architecture and offers insight into Ratnagiri’s historical significance. Set amidst greenery, it is a calm and informative destination for history enthusiasts.",
-        image: [Thibaw_Palace],
-        mostlyVisited: true
-    },
-    {
-        id: 5,
-        name: 'Ratnadurg Fort',
-        description: "Ratnadurg Fort is an ancient coastal fort located near Ratnagiri city and surrounded by the Arabian Sea on three sides. The fort played a crucial role during the Maratha period and is known for its strong fortifications and scenic views. Inside the fort, visitors can find the Bhagwati Temple, which adds spiritual significance to the site. The fort offers a perfect mix of history, spirituality, and natural beauty.",
-        image: [Ratnadurg_Fort],
-        mostlyVisited: true
-    },
-    {
-        id: 6,
-        name: 'Bhatye Beach',
-        description: "Bhatye Beach is a long and wide beach located close to Ratnagiri city, making it a popular destination for families and tourists. The beach is known for its soft sand, gentle waves, and stunning sunset views. Visitors can enjoy leisure walks, horse rides, and local snacks sold by nearby vendors. Its accessibility and peaceful environment make it ideal for evening outings.",
-        image: [Bhatye_Beach],
-        mostlyVisited: true
-    },
-    {
-        id: 7,
-        name: 'Pawas (Swami Swaroopanand Ashram)',
-        description: "Pawas is a serene village famous for the Swami Swaroopanand Ashram, a center for spiritual learning and meditation. Surrounded by greenery and silence, it offers a peaceful escape from city life. Many visitors come here to experience calmness, attend spiritual sessions, or simply relax in nature. Pawas is especially popular among devotees and those seeking inner peace.",
-        image: [heroImg],
-        mostlyVisited: false
-    },
-    {
-        id: 8,
-        name: 'Velneshwar Beach & Temple',
-        description: "Velneshwar is a beautiful coastal village known for its clean beach and ancient Lord Shiva temple. The beach offers a tranquil environment with clear waters and soft sand, while the temple adds religious importance to the location. It is an ideal place for visitors who want to combine spirituality with a relaxing beach experience. The calm atmosphere makes it perfect for a peaceful getaway.",
-        image: [Velneshwar_Temple],
-        mostlyVisited: true
-    }
+  {
+    id: 1,
+    name: "Ganapatipule Beach",
+    category: "Beaches",
+    description:
+      "Ganapatipule Beach is known for its clean shoreline, calm waves, and peaceful surroundings. The nearby Ganpatipule Temple adds a spiritual charm to the place. It is perfect for relaxing walks and beautiful sunset views.",
+    image: [Ganapatipule_Beach],
+    mostlyVisited: true
+  },
+  {
+    id: 50,
+    name: "Thibaw Palace",
+    category: "Temples",
+    description: 
+        "Ganapatipule Beach is known for its clean shoreline, calm waves, and peaceful surroundings. The nearby Ganpatipule Temple adds a spiritual charm to the place. It is perfect for relaxing walks and beautiful sunset views.",
+    image: [Thibaw_Palace],
+    mostlyVisited: true
+  },
+  {
+    id: 23,
+    name: "Velneshwar Temple",
+    category: "Temples",
+    description:
+      "Velneshwar Temple is an ancient Shiva temple located close to the seashore. The calm environment and rhythmic sound of waves create a peaceful spiritual experience. Visitors often combine temple visits with time at the nearby beach.",
+    image: [Velneshwar_Temple],
+    mostlyVisited: true
+  },
+  {
+    id: 11,
+    name: "Jaigad Fort",
+    category: "Forts",
+    description:
+      "Jaigad Fort stands at the meeting point of the Shastri River and the Arabian Sea. The fort offers breathtaking panoramic views and reflects the region’s rich Maratha history. It is a favorite spot for photography lovers.",
+    image: [Jaigad_Fort],
+    mostlyVisited: true
+  },
+  {
+    id: 3,
+    name: "Bhatye Beach",
+    category: "Beaches",
+    description:
+      "Bhatye Beach is a long and wide beach located close to Ratnagiri city. Its gentle waves and open shoreline make it ideal for family outings. The beach is especially beautiful during evening sunsets.",
+    image: [Bhatye_Beach],
+    mostlyVisited: false
+  },
+  {
+    id: 22,
+    name: "Pawas Ashram",
+    category: "Temples",
+    description:
+      "Pawas Ashram is a peaceful spiritual retreat founded by Swami Swaroopanand. Surrounded by greenery and silence, it attracts visitors seeking calmness and inner peace. The ashram offers a refreshing break from busy city life.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 18,
+    name: "Mandangad Fort",
+    category: "Forts",
+    description:
+      "Mandangad Fort is a hill fort known for its trekking routes and scenic views. The fort offers a glimpse into ancient military architecture. It is ideal for adventure lovers and nature enthusiasts.",
+    image: [heroImg],
+    mostlyVisited: true
+  },
+  {
+    id: 2,
+    name: "Aare Ware Beach",
+    category: "Beaches",
+    description:
+      "Aare Ware Beach consists of two beautiful beaches separated by a hill. The viewpoint above the beach offers stunning views of the coastline. It is a popular spot for sunset watching and photography.",
+    image: [Aare_Ware_Beach],
+    mostlyVisited: true
+  },
+  {
+    id: 25,
+    name: "Parshuram Temple",
+    category: "Temples",
+    description:
+      "Parshuram Temple is located on a hilltop surrounded by lush greenery. The temple offers a calm spiritual atmosphere along with scenic views. It is believed to be associated with Lord Parshuram.",
+    image: [heroImg],
+    mostlyVisited: true
+  },
+  {
+    id: 12,
+    name: "Ratnadurg Fort",
+    category: "Forts",
+    description:
+      "Ratnadurg Fort is an ancient fort surrounded by the Arabian Sea on three sides. The fort has strong walls and historic structures. Inside the fort, visitors can also find the Bhagwati Temple.",
+    image: [Ratnadurg_Fort],
+    mostlyVisited: false
+  },
+  {
+    id: 4,
+    name: "Velneshwar Beach",
+    category: "Beaches",
+    description:
+      "Velneshwar Beach is known for its clean sand and calm waters. The beach offers a peaceful environment away from crowds. It is often visited along with the nearby Velneshwar Temple.",
+    image: [Velneshwar_Temple],
+    mostlyVisited: false
+  },
+  {
+    id: 26,
+    name: "Marleshwar Temple",
+    category: "Temples",
+    description:
+      "Marleshwar Temple is a cave temple surrounded by dense forests. During the monsoon season, nearby waterfalls enhance its beauty. The temple offers a unique spiritual experience close to nature.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 15,
+    name: "Vijaydurg Fort",
+    category: "Forts",
+    description:
+      "Vijaydurg Fort is one of the strongest sea forts of the Maratha Empire. It played a major role in naval defense. The fort showcases impressive architecture and rich historical importance.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 6,
+    name: "Ganeshgule Beach",
+    category: "Beaches",
+    description:
+      "Ganeshgule Beach is a quiet and less crowded beach near Ganpatipule. The beach offers clean surroundings and a relaxing atmosphere. It is ideal for visitors looking for peace and solitude.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 29,
+    name: "Shree Dev Ravalnath Temple",
+    category: "Temples",
+    description:
+      "Shree Dev Ravalnath Temple is a traditional village temple with cultural importance. It reflects the strong faith of the local community. The peaceful surroundings add to its spiritual charm.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 14,
+    name: "Bankot Fort",
+    category: "Forts",
+    description:
+      "Bankot Fort is located near the Savitri River and offers scenic river views. The fort has historical significance and calm surroundings. It is a good spot for history lovers and photographers.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 7,
+    name: "Purnagad Beach",
+    category: "Beaches",
+    description:
+      "Purnagad Beach is a peaceful beach located near Purnagad Fort. The beach offers a natural and untouched environment. It is ideal for relaxing walks and enjoying coastal beauty.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 30,
+    name: "Datta Mandir, Pawas",
+    category: "Temples",
+    description:
+      "Datta Mandir in Pawas is a quiet spiritual place surrounded by greenery. Visitors often come here for meditation and peace. The calm environment makes it ideal for spiritual reflection.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 13,
+    name: "Purnagad Fort",
+    category: "Forts",
+    description:
+      "Purnagad Fort is a coastal fort reflecting the region’s naval history. The fort offers scenic sea views and historic remains. It is a peaceful place to explore history and nature together.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 9,
+    name: "Anjarle Beach",
+    category: "Beaches",
+    description:
+      "Anjarle Beach is clean, quiet, and less crowded compared to popular beaches. It offers calm waters and a relaxed atmosphere. The beach is perfect for nature lovers and peaceful travelers.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 28,
+    name: "Chandika Mandir",
+    category: "Temples",
+    description:
+      "Chandika Mandir is a small local temple known for its peaceful environment. It holds cultural significance for nearby villages. Visitors often experience a calm and spiritual atmosphere here.",
+    image: [heroImg],
+    mostlyVisited: false
+  }
 ]
+
 
 export const activities = [
     {

@@ -8,6 +8,8 @@ import Explore from './pages/Explore'
 import Login from './pages/Login'
 import Festivals from './pages/Festivals'
 import Attractions from './pages/Attractions'
+import ThingsToDo from './components/ThingsToDo'
+import PlanTrip from './components/PlanTrip'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
             <Route path='/explore' element={<Explore />} />
             <Route path='/festivals' element={<Festivals />} />
             <Route path='/attraction/:attractionId' element={<Attractions />} />
+            <Route path='/things-to-do' element={<ThingsToDo />} />
+            <Route path='/travel-tips' element={<PlanTrip />} />
             <Route path='/login' element={<Login />} />
           </Routes>
         <Footer />

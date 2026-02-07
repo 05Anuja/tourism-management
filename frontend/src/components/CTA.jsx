@@ -1,9 +1,12 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useContext } from 'react'
+import { AttractionContext } from '../context/AttractionContext'
+// import { useNavigate } from 'react-router-dom'
 
 const CTA = () => {
 
-  const navigate = useNavigate()
+//   const navigate = useNavigate()
+
+const {navigate} = useContext(AttractionContext);
 
   return (
     <div className="mt-16 px-4 mb-8">

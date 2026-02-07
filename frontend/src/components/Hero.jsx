@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { assets } from '../assets/assets'
+import { AttractionContext } from '../context/AttractionContext'
 
 const Hero = () => {
+
+  const {navigate} = useContext(AttractionContext);
+
   return (
     <div className='relative h-[90vh] w-full'>
       {/* Background Image */}
@@ -25,11 +29,11 @@ const Hero = () => {
         </p>
 
         <div className='mt-6 flex gap-4'>
-            <button className='bg-orange-500 hover:bg-orange-600 cursor-pointer outline-none transition px-6 py-3 rounded-md text-sm sm:text-base font-semibold'>
+            <button onClick={() => navigate('/explore')} className='bg-orange-500 hover:bg-orange-600 cursor-pointer outline-none transition px-6 py-3 rounded-md text-sm sm:text-base font-semibold'>
                 Explore Places
             </button>
 
-            <button className='border border-white/70 hover:bg-white/10 cursor-pointer outline-none transition px-6 py-3 rounded-md text-sm sm:text-base'>
+            <button onClick={() => navigate('/festivals')} className='border border-white/70 hover:bg-white/10 cursor-pointer outline-none transition px-6 py-3 rounded-md text-sm sm:text-base'>
                 View Festivals
             </button>
         </div>
