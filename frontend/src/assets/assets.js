@@ -19,6 +19,7 @@ export const assets = {
 }
 
 export const attractions = [
+  // Original 20 objects
   {
     id: 1,
     name: "Ganapatipule Beach",
@@ -33,7 +34,7 @@ export const attractions = [
     name: "Thibaw Palace",
     category: "Temples",
     description: 
-        "Ganapatipule Beach is known for its clean shoreline, calm waves, and peaceful surroundings. The nearby Ganpatipule Temple adds a spiritual charm to the place. It is perfect for relaxing walks and beautiful sunset views.",
+        "Thibaw Palace is a historic royal residence known for its exquisite architecture and cultural heritage. Once home to the last king of Burma, the palace reflects intricate carvings, grand halls, and regal charm. Visitors can explore the palace grounds to experience a glimpse of royal life and historical significance.",
     image: [Thibaw_Palace],
     mostlyVisited: true
   },
@@ -207,8 +208,272 @@ export const attractions = [
       "Chandika Mandir is a small local temple known for its peaceful environment. It holds cultural significance for nearby villages. Visitors often experience a calm and spiritual atmosphere here.",
     image: [heroImg],
     mostlyVisited: false
+  },
+
+  // Additional 30 objects
+  {
+    id: 31,
+    name: "Kunkeshwar Beach",
+    category: "Beaches",
+    description:
+      "Kunkeshwar Beach is known for its long coastline and peaceful surroundings. The beach is clean and ideal for quiet walks. It is often visited along with the nearby Kunkeshwar Temple.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 32,
+    name: "Kunkeshwar Temple",
+    category: "Temples",
+    description:
+      "Kunkeshwar Temple is an ancient Shiva temple located near the Arabian Sea. The temple is surrounded by coconut trees and calm surroundings. It offers a serene spiritual experience.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 33,
+    name: "Ambolgad Fort",
+    category: "Forts",
+    description:
+      "Ambolgad Fort is a small coastal fort with scenic sea views. It reflects the historical importance of the Konkan coastline. The fort is peaceful and less crowded.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 34,
+    name: "Guhagar Beach",
+    category: "Beaches",
+    description:
+      "Guhagar Beach is a clean and wide beach famous for its white sand. The calm environment makes it suitable for family visits. The beach is ideal for relaxing evenings.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 35,
+    name: "Hedvi Dashbhuja Temple",
+    category: "Temples",
+    description:
+      "Hedvi Dashbhuja Temple is dedicated to Goddess Dashbhuja. The temple is located in a quiet village setting. It is known for its spiritual and cultural significance.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 36,
+    name: "Yashwantgad Fort",
+    category: "Forts",
+    description:
+      "Yashwantgad Fort is a hill fort surrounded by dense greenery. The fort offers scenic views and trekking opportunities. It is ideal for adventure seekers.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 37,
+    name: "Velas Beach",
+    category: "Beaches",
+    description:
+      "Velas Beach is famous for its clean sand and calm waters. The beach is also known for turtle conservation activities. It offers a peaceful natural experience.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 38,
+    name: "Karhateshwar Temple",
+    category: "Temples",
+    description:
+      "Karhateshwar Temple is an ancient Shiva temple located near the coast. The temple architecture is simple yet spiritually powerful. The surroundings are calm and quiet.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 39,
+    name: "Sakhargad Fort",
+    category: "Forts",
+    description:
+      "Sakhargad Fort is located on a hilltop offering panoramic views. The fort has historical importance and natural beauty. It is suitable for trekking lovers.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 40,
+    name: "Kelshi Beach",
+    category: "Beaches",
+    description:
+      "Kelshi Beach is a long and peaceful beach with soft sand. The calm waves make it ideal for relaxation. It is perfect for a quiet getaway.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 41,
+    name: "Vyaghreshwar Temple",
+    category: "Temples",
+    description:
+      "Vyaghreshwar Temple is a historic temple dedicated to Lord Shiva. The temple is located amidst greenery and silence. It offers a tranquil spiritual atmosphere.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 42,
+    name: "Palgad Fort",
+    category: "Forts",
+    description:
+      "Palgad Fort is a lesser-known fort surrounded by forests. It offers a peaceful trekking experience. The fort provides scenic views of the surrounding region.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 43,
+    name: "Murud Beach",
+    category: "Beaches",
+    description:
+      "Murud Beach is known for its clean shoreline and calm environment. The beach is suitable for peaceful walks. It is a good spot for sunset views.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 44,
+    name: "Shri Keshavraj Temple",
+    category: "Temples",
+    description:
+      "Shri Keshavraj Temple is a quiet spiritual place located in a forest area. The temple is known for its calm and natural surroundings. It attracts peaceful visitors.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 45,
+    name: "Sumargad Fort",
+    category: "Forts",
+    description:
+      "Sumargad Fort is a hill fort offering scenic valley views. It is surrounded by dense greenery. The fort is ideal for nature and trekking enthusiasts.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 46,
+    name: "Aadgaon Beach",
+    category: "Beaches",
+    description:
+      "Aadgaon Beach is a quiet and untouched beach. The beach offers clean surroundings and a peaceful atmosphere. It is ideal for solitude seekers.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 47,
+    name: "Shivaji Maharaj Smarak",
+    category: "Temples",
+    description:
+      "Shivaji Maharaj Smarak is a memorial honoring Chhatrapati Shivaji Maharaj. It reflects historical pride and cultural heritage. Visitors experience inspiration and respect.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 48,
+    name: "Bhavangad Fort",
+    category: "Forts",
+    description:
+      "Bhavangad Fort is a hill fort surrounded by dense forests. It offers peaceful trekking routes. The fort has historical significance.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 49,
+    name: "Madban Beach",
+    category: "Beaches",
+    description:
+      "Madban Beach is known for its rocky shoreline and scenic beauty. The beach is calm and less crowded. It is suitable for peaceful visits.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 51,
+    name: "Shri Devi Bhavani Temple",
+    category: "Temples",
+    description:
+      "Shri Devi Bhavani Temple is a local village temple with spiritual importance. The temple has a calm and devotional atmosphere. It is culturally significant.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 52,
+    name: "Gopalgad Fort",
+    category: "Forts",
+    description:
+      "Gopalgad Fort is a sea fort offering stunning ocean views. It has strong walls and historical structures. The fort is peaceful and scenic.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 53,
+    name: "Kajir Bhati Beach",
+    category: "Beaches",
+    description:
+      "Kajir Bhati Beach is a small and quiet beach. It is surrounded by greenery and natural beauty. The beach is ideal for peaceful relaxation.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 54,
+    name: "Shri Ram Mandir",
+    category: "Temples",
+    description:
+      "Shri Ram Mandir is a peaceful temple dedicated to Lord Ram. The temple offers a calm spiritual environment. It is visited by local devotees.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 55,
+    name: "Mahipatgad Fort",
+    category: "Forts",
+    description:
+      "Mahipatgad Fort is a hill fort known for its scenic trekking routes. The fort offers panoramic views of Konkan. It is rich in history.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 56,
+    name: "Dabhol Beach",
+    category: "Beaches",
+    description:
+      "Dabhol Beach is a peaceful beach near a fishing village. The beach offers clean surroundings and calm waters. It is ideal for relaxed visits.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 57,
+    name: "Shri Datta Temple",
+    category: "Temples",
+    description:
+      "Shri Datta Temple is a quiet place for meditation and devotion. The temple is surrounded by greenery. It offers a peaceful spiritual atmosphere.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 58,
+    name: "Rasalgad Fort",
+    category: "Forts",
+    description:
+      "Rasalgad Fort is a hill fort with strong historical importance. The fort offers scenic views and trekking paths. It attracts history lovers.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 59,
+    name: "Ladghar Beach",
+    category: "Beaches",
+    description:
+      "Ladghar Beach is also known as Tamas Teertha. The beach is clean and family-friendly. It is suitable for swimming and relaxing.",
+    image: [heroImg],
+    mostlyVisited: false
+  },
+  {
+    id: 60,
+    name: "Shri Ganesh Temple",
+    category: "Temples",
+    description:
+      "Shri Ganesh Temple is a small and peaceful temple. The temple has a calm devotional environment. It is visited by locals regularly.",
+    image: [heroImg],
+    mostlyVisited: false
   }
-]
+];
+
 
 
 export const activities = [

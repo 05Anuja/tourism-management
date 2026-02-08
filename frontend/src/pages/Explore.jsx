@@ -9,13 +9,8 @@ const Explore = () => {
     return JSON.parse(localStorage.getItem('favourites')) || []
   })
 
-  // console.log(attractions.length)
-
-  // Load favourites from localStorage
-  // useEffect(() => {
-  //   const storedFavs = JSON.parse(localStorage.getItem('favourites')) || []
-  //   setFavourites(storedFavs)
-  // }, [])
+  // Track which cards are expanded
+  const [expandedCards, setExpandedCards] = useState([])
 
   // Toggle favourites
   const toggelFavourites = (id) => {
@@ -29,6 +24,15 @@ const Explore = () => {
 
     setFavourites(updatedFavs)
     localStorage.setItem('favourites', JSON.stringify(updatedFavs))
+  }
+
+  // Toggle Read More / Read Less for a card
+  const toggleDescription = (id) => {
+    if (expandedCards.includes(id)) {
+      setExpandedCards(expandedCards.filter(cardId => cardId !== id))
+    } else {
+      setExpandedCards([...expandedCards, id])
+    }
   }
 
   // Filter attractions
@@ -46,12 +50,13 @@ const Explore = () => {
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-6 py-2 rounded-full outline-none text-sm font-medium transition
-              ${
-                activeCategory === category
-                  ? 'bg-orange-500 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-orange-100'
-              }`}
+            className={`px-6 py-2 rounded-full cursor-pointer outline-none text-sm font-medium transition
+              ${activeCategory === category
+                ? 'bg-orange-500 text-white'
+                : 'bg-gray-200 text-gray-700 hover:bg-orange-100'
+              }
+                w-[45%] sm:w-auto
+              `}
           >
             {category}
           </button>
@@ -62,6 +67,10 @@ const Explore = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {filteredAttractions.map((item) => {
           const isFav = favourites.includes(item.id)
+          const isExpanded = expandedCards.includes(item.id)
+          const description = isExpanded
+            ? item.description
+            : item.description.slice(0, 100) + (item.description.length > 100 ? "..." : "")
 
           return (
             <div
@@ -81,24 +90,34 @@ const Explore = () => {
                   <h3 className="text-lg font-semibold mb-2">
                     {item.name}
                   </h3>
-                  <p className="text-sm text-gray-600 line-clamp-3">
-                    {item.description}
+                  <p className="text-sm text-gray-600">
+                    {description}{" "}
+                    {item.description.length > 100 && (
+                      <span
+                        onClick={() => toggleDescription(item.id)}
+                        className="text-orange-500 cursor-pointer hover:underline text-xs"
+                      >
+                        {isExpanded ? "Read Less" : "Read More"}
+                      </span>
+                    )}
                   </p>
                 </div>
 
                 {/* Bottom Row */}
                 <div className="flex items-center justify-between mt-4 pt-3 border-t">
-                  <span className="text-xs px-3 py-1 bg-gray-100 rounded-full">
-                    {item.category}
+                  <span className="cursor-pointer text-xs px-3 py-1 bg-gray-100 rounded hover:bg-gray-200">
+                    Add to Plan
                   </span>
 
-                  <button className='outline-none cursor-pointer' onClick={() => toggelFavourites(item.id)}>
+                  <button
+                    className='outline-none cursor-pointer'
+                    onClick={() => toggelFavourites(item.id)}
+                  >
                     <Heart
                       size={22}
-                      className={`transition ${
-                        isFav
-                          ? 'fill-red-500 text-red-500'
-                          : 'text-gray-400 hover:text-red-400'
+                      className={`transition ${isFav
+                        ? 'fill-red-500 text-red-500'
+                        : 'text-gray-400 hover:text-red-400'
                       }`}
                     />
                   </button>
