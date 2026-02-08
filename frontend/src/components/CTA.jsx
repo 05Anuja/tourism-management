@@ -35,10 +35,10 @@ const {navigate} = useContext(AttractionContext);
           </button>
 
           <button
-            onClick={() => navigate('/festivals')}
+            onClick={() => navigate('/booktour')}
             className="bg-white text-orange-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition cursor-pointer outline-none"
             >
-            Explore Festivals
+            Book Tour
           </button>
 
               </div>

@@ -10,11 +10,18 @@ import Festivals from './pages/Festivals'
 import Attractions from './pages/Attractions'
 import ThingsToDo from './components/ThingsToDo'
 import PlanTrip from './components/PlanTrip'
+import {ToastContainer} from 'react-toastify'
+import BookTour from './pages/BookTour'
 
 const App = () => {
   return (
     <>
       <div>
+        <ToastContainer
+        position='top-center'
+        autoClose= {2000}
+        newestOnTop= {true}
+        />
         <Navbar />
           <Routes>
             <Route path='/' element={<Home />} />
@@ -24,6 +31,7 @@ const App = () => {
             <Route path='/attraction/:attractionId' element={<Attractions />} />
             <Route path='/things-to-do' element={<ThingsToDo />} />
             <Route path='/travel-tips' element={<PlanTrip />} />
+            <Route path='/booktour' element={<BookTour />} />
             <Route path='/login' element={<Login />} />
           </Routes>
         <Footer />
