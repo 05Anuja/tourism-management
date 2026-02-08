@@ -71,7 +71,7 @@ const Explore = () => {
           return (
             <div key={item.id} className="perspective">
               <div
-                className={`relative w-full h-[420px] transition-transform duration-700 transform-style-preserve-3d
+                className={`relative w-full h-105 transition-transform duration-700 transform-style-preserve-3d
                 ${isFlipped ? 'rotate-y-180' : ''}`}
               >
 
