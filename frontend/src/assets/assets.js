@@ -446,8 +446,6 @@ export const attractions = [
   }
 ];
 
-
-
 export const activities = [
     {
         id: 1,
@@ -538,4 +536,61 @@ export const planTrip = [
             "Follow local advice during monsoon travel."
         ]
     }
+]
+
+export const festivals = [
+  {
+    id: 1,
+    name: "Ganesh Chaturthi",
+    month: "August – September",
+    location: "Entire Ratnagiri district, Maharashtra",
+    // image: [Ganesh_Chaturthi],
+    description:
+      "Ganesh Chaturthi is the most important and widely celebrated festival in Ratnagiri. Homes and temples are decorated with idols of Lord Ganesh, accompanied by prayers, cultural programs, and grand processions."
+  },
+  {
+    id: 2,
+    name: "Shimga (Konkan Holi)",
+    month: "March",
+    location: "Villages across Ratnagiri district",
+    // image: [Shimga],
+    description:
+      "Shimga is the traditional Holi of the Konkan region. It is celebrated with bonfires, folk dances, village processions, and local rituals that reflect the rich cultural heritage of Ratnagiri."
+  },
+  {
+    id: 3,
+    name: "Velas Turtle Festival",
+    month: "February – April",
+    location: "Velas Beach, Mandangad taluka, Ratnagiri",
+    // image: [Velas_Turtle_Festival],
+    description:
+      "The Velas Turtle Festival focuses on the conservation of Olive Ridley turtles. Visitors can witness baby turtles being released into the sea, promoting awareness about wildlife protection."
+  },
+  {
+    id: 4,
+    name: "Mahashivratri",
+    month: "February – March",
+    location: "Shiva temples across Ratnagiri district",
+    // image: [Mahashivratri],
+    description:
+      "Mahashivratri is a sacred Hindu festival dedicated to Lord Shiva. Devotees observe fasting, night-long prayers, and special rituals in Shiva temples throughout Ratnagiri."
+  },
+  {
+    id: 5,
+    name: "Narali Pournima",
+    month: "August",
+    location: "Coastal villages of Ratnagiri",
+    // image: [Narali_Pournima],
+    description:
+      "Narali Pournima marks the beginning of the fishing season. Fishermen offer coconuts to the sea as a symbol of gratitude and safety, making it a significant coastal festival."
+  },
+  {
+    id: 6,
+    name: "Ratnagiri Mango Festival",
+    month: "April – May",
+    location: "Ratnagiri district, Maharashtra",
+    // image: [Mango_Festival],
+    description:
+      "The Ratnagiri Mango Festival celebrates the famous Alphonso mangoes. The festival features mango exhibitions, tasting events, and cultural programs that attract visitors from across the state."
+  }
 ]

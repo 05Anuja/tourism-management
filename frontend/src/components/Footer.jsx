@@ -35,14 +35,14 @@ const Footer = () => {
                 Attractions
               </Link>
             </li>
-            {/* <li>
-              <Link to="/things-to-do" className="hover:text-white transition">
-                Things To Do
-              </Link>
-            </li> */}
             <li>
               <Link to="/festivals" className="hover:text-white hover:border-b transition">
                 Festivals
+              </Link>
+            </li>
+            <li>
+              <Link to="/booktour" className="hover:text-white hover:border-b transition">
+                Book Tour
               </Link>
             </li>
             {/* <li>
@@ -75,8 +75,9 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 text-center py-5 text-sm text-gray-400">
-        © {new Date().getFullYear()} Ratnagiri Tourism | Developed by{' '}
-        <span className="text-white font-medium">Pooja & Anuja</span>
+        © {new Date().getFullYear()} Ratnagiri Tourism 
+        {/* | Developed by{' '} */}
+        {/* <span className="text-white font-medium">Anuja Pawar</span> */}
       </div>
 
     </footer>

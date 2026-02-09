@@ -8,10 +8,11 @@ import Explore from './pages/Explore'
 import Login from './pages/Login'
 import Festivals from './pages/Festivals'
 import Attractions from './pages/Attractions'
-import ThingsToDo from './components/ThingsToDo'
-import PlanTrip from './components/PlanTrip'
 import {ToastContainer} from 'react-toastify'
 import BookTour from './pages/BookTour'
+import Favourites from './pages/Favourites'
+import MyPlanTrip from './pages/MyPlanTrip'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
@@ -29,10 +30,11 @@ const App = () => {
             <Route path='/explore' element={<Explore />} />
             <Route path='/festivals' element={<Festivals />} />
             <Route path='/attraction/:attractionId' element={<Attractions />} />
-            <Route path='/things-to-do' element={<ThingsToDo />} />
-            <Route path='/travel-tips' element={<PlanTrip />} />
+            <Route path='/favourites' element={<Favourites />} />
+            {/* <Route path='/mytrips' element={<MyPlanTrip />} /> */}
             <Route path='/booktour' element={<BookTour />} />
             <Route path='/login' element={<Login />} />
+            <Route path='*' element={<NotFound />} />
           </Routes>
         <Footer />
       </div>

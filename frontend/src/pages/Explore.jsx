@@ -100,11 +100,11 @@ const Explore = () => {
                     </div>
 
                     <div className="flex items-center justify-between mt-4 pt-3 border-t">
-                      <span className="text-xs px-3 py-1 bg-gray-100 rounded">
+                      <span className="text-xs px-3 cursor-pointer outline-none py-1 bg-gray-100 rounded">
                         Add to Plan
                       </span>
 
-                      <button onClick={() => toggleFavourites(item.id)}>
+                      <button className='cursor-pointer outline-none' onClick={() => toggleFavourites(item.id)}>
                         <Heart
                           size={22}
                           className={`${isFav
