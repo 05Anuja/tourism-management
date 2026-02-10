@@ -11,7 +11,7 @@ import Attractions from './pages/Attractions'
 import {ToastContainer} from 'react-toastify'
 import BookTour from './pages/BookTour'
 import Favourites from './pages/Favourites'
-import MyPlanTrip from './pages/MyPlanTrip'
+import PlacesToVisit from './pages/PlacesToVisit'
 import NotFound from './pages/NotFound'
 
 const App = () => {
@@ -31,7 +31,7 @@ const App = () => {
             <Route path='/festivals' element={<Festivals />} />
             <Route path='/attraction/:attractionId' element={<Attractions />} />
             <Route path='/favourites' element={<Favourites />} />
-            {/* <Route path='/mytrips' element={<MyPlanTrip />} /> */}
+            <Route path='/mytrips' element={<PlacesToVisit />} />
             <Route path='/booktour' element={<BookTour />} />
             <Route path='/login' element={<Login />} />
             <Route path='*' element={<NotFound />} />

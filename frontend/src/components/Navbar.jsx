@@ -60,7 +60,7 @@ const Navbar = () => {
                   Favourites
                 </Link>
                 <Link to="/mytrips" className="px-4 py-2 hover:bg-slate-700 hover:text-orange-500">
-                  My Trip Plan
+                  Places to Visit
                 </Link>
                 <Link to="/booktour" className="px-4 py-2 hover:bg-slate-700 hover:text-orange-500">
                   Book Tour
@@ -114,7 +114,7 @@ const Navbar = () => {
         onClick={() => setMenuOpen(false)}
         className="hover:text-orange-500"
       >
-        My Trip Plan
+        Places to Visit
       </Link>
 
       <Link

@@ -1,23 +1,22 @@
 import React from 'react'
 import { useContext } from "react";
 import { AttractionContext } from "../context/AttractionContext";
-import { HeartOff } from "lucide-react";
 
-const Favourites = () => {
-  const { favourites, toggleFavourite } =
+const PlacesToVisit = () => {
+  const { visitLater, toggleVisitLater } =
     useContext(AttractionContext);
 
-  if (favourites.length === 0) {
+  if (visitLater.length === 0) {
     return (
       <p className="text-center mt-16 text-gray-500">
-        No favourites added yet ❤️
+        No places added yet 
       </p>
     );
   }
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {favourites.map((item) => (
+      {visitLater.map((item) => (
         <div
           key={item.id}
           className="bg-white rounded-xl shadow-md overflow-hidden"
@@ -36,18 +35,17 @@ const Favourites = () => {
 
               <button
                 className='outline-none cursor-pointer'
-                onClick={() => toggleFavourite(item)}
+                onClick={() => toggleVisitLater(item)}
               >
-                <HeartOff
-                  size={20}
-                  className="text-red-500"
-                />
+                <button className='px-2 py-1 bg-gray-200 rounded outline-none cursor-pointer hover:bg-gray-300'>
+                  Remove
+                </button>
               </button>
             </div>
 
-            <p className="text-sm text-gray-600 mt-2">
+            {/* <p className="text-sm text-gray-600 mt-2">
               {item.description.slice(0, 120)}...
-            </p>
+            </p> */}
           </div>
         </div>
       ))}
@@ -55,4 +53,4 @@ const Favourites = () => {
   );
 };
 
-export default Favourites;
+export default PlacesToVisit;

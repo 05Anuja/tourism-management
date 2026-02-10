@@ -42,6 +42,11 @@ import Rasalgad_Fort from './Rasalgad_Fort.jpg'
 import Kunkeshwar_Beach from './Kunkeshwar_Beach.jpg'
 import Mahipatgad_Fort from './Mahipatgad_Fort.jpg'
 import Aadgaon_Beach from './Aadgaon_Beach.webp'
+import Ganesh_Chaturthi from './Ganesh_Chaturthi.jpg'
+import Shimga from './Shimga.jpg'
+import Velas_Turtle_Festival from './Velas_Turtle_Festival.jpeg'
+import Gudi_Padwa from './Gudi_Padwa.jpg'
+import Mango_Fest from './Mango_Fest.jpg'
 
 export const assets = {
     heroImg, img
@@ -544,7 +549,7 @@ export const festivals = [
     name: "Ganesh Chaturthi",
     month: "August – September",
     location: "Entire Ratnagiri district, Maharashtra",
-    // image: [Ganesh_Chaturthi],
+    image: [Ganesh_Chaturthi],
     description:
       "Ganesh Chaturthi is the most important and widely celebrated festival in Ratnagiri. Homes and temples are decorated with idols of Lord Ganesh, accompanied by prayers, cultural programs, and grand processions."
   },
@@ -553,7 +558,7 @@ export const festivals = [
     name: "Shimga (Konkan Holi)",
     month: "March",
     location: "Villages across Ratnagiri district",
-    // image: [Shimga],
+    image: [Shimga],
     description:
       "Shimga is the traditional Holi of the Konkan region. It is celebrated with bonfires, folk dances, village processions, and local rituals that reflect the rich cultural heritage of Ratnagiri."
   },
@@ -562,34 +567,25 @@ export const festivals = [
     name: "Velas Turtle Festival",
     month: "February – April",
     location: "Velas Beach, Mandangad taluka, Ratnagiri",
-    // image: [Velas_Turtle_Festival],
+    image: [Velas_Turtle_Festival],
     description:
       "The Velas Turtle Festival focuses on the conservation of Olive Ridley turtles. Visitors can witness baby turtles being released into the sea, promoting awareness about wildlife protection."
   },
   {
     id: 4,
-    name: "Mahashivratri",
-    month: "February – March",
-    location: "Shiva temples across Ratnagiri district",
-    // image: [Mahashivratri],
+    name: "Gudi Padwa",
+    month: "March – April",
+    location: "Across Ratnagiri district",
+    image: [Gudi_Padwa],
     description:
-      "Mahashivratri is a sacred Hindu festival dedicated to Lord Shiva. Devotees observe fasting, night-long prayers, and special rituals in Shiva temples throughout Ratnagiri."
+      "Gudi Padwa marks the Marathi New Year and the arrival of spring. Homes and streets in Ratnagiri are decorated with a traditional Gudi symbolizing prosperity, victory, and new beginnings. Families perform rituals, create rangoli, and enjoy festive Konkan cuisine."
   },
   {
     id: 5,
-    name: "Narali Pournima",
-    month: "August",
-    location: "Coastal villages of Ratnagiri",
-    // image: [Narali_Pournima],
-    description:
-      "Narali Pournima marks the beginning of the fishing season. Fishermen offer coconuts to the sea as a symbol of gratitude and safety, making it a significant coastal festival."
-  },
-  {
-    id: 6,
     name: "Ratnagiri Mango Festival",
     month: "April – May",
     location: "Ratnagiri district, Maharashtra",
-    // image: [Mango_Festival],
+    image: [Mango_Fest],
     description:
       "The Ratnagiri Mango Festival celebrates the famous Alphonso mangoes. The festival features mango exhibitions, tasting events, and cultural programs that attract visitors from across the state."
   }
