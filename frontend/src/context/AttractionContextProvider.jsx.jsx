@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { activities, attractions, festivals, planTrip } from "../assets/assets";
+import { activities, attractions, festivals, planTrip, tours } from "../assets/assets";
 import { AttractionContext } from "./AttractionContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -54,6 +54,7 @@ const AttractionContextProvider = ({ children }) => {
 
   const value = {
     attractions,
+    tours,
     activities,
     festivals,
     planTrip,

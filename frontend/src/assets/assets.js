@@ -590,3 +590,41 @@ export const festivals = [
       "The Ratnagiri Mango Festival celebrates the famous Alphonso mangoes. The festival features mango exhibitions, tasting events, and cultural programs that attract visitors from across the state."
   }
 ]
+
+export const tours = [
+  {
+    "id": 1,
+    "name": "Ratnagiri Heritage & Beach Explorer",
+    "duration": "3D/2N",
+    "highlights": ["Ganpatipule Beach", "Ratnadurga Fort", "Thibaw Palace"],
+    "price": "₹6500 - ₹8000"
+  },
+  {
+    "id": 2,
+    "name": "Konkan Coastal Adventure",
+    "duration": "4D/3N",
+    "highlights": ["Bhatye Beach", "Velneshwar Temple", "Water Sports"],
+    "price": "₹9000 - ₹11000"
+  },
+  {
+    "id": 3,
+    "name": "Nature + Waterfall Retreat",
+    "duration": "2D/1N",
+    "highlights": ["Hire Palace Garden", "Waterfall Trek", "Village Tour"],
+    "price": "₹4000 - ₹5500"
+  },
+  {
+    "id": 4,
+    "name": "Ratnagiri Culture & Cuisine",
+    "duration": "5D/4N",
+    "highlights": ["Spice Market", "Cooking Class", "Beach Walks"],
+    "price": "₹11000 - ₹14000"
+  },
+  {
+    "id": 5,
+    "name": "Premium Luxury Beach Stay",
+    "duration": "3D/2N",
+    "highlights": ["Luxury Resort", "Sunset Cruise", "Private Dinner"],
+    "price": "₹18000 - ₹22000"
+  }
+]
