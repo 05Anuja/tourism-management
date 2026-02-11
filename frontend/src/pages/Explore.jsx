@@ -88,9 +88,10 @@ const Explore = () => {
                     </div>
 
                     <div
-                      onClick={() => toggleVisitLater(item)}
                       className="flex items-center justify-between mt-4 cursor-pointer  pt-3 border-t">
-                      <span className="text-xs px-3 py-1 bg-gray-100 rounded">
+                      <span
+                      onClick={() => toggleVisitLater(item)}
+                      className="text-xs px-3 py-1 bg-gray-100 rounded">
                         Visit Later
                       </span>
 
@@ -125,8 +126,8 @@ const Explore = () => {
                   </h3>
 
                   <div className="text-sm space-y-2">
-                    <p>📍 {item.location}</p>
-                    <p>🕒 {item.bestTimeToVisit}</p>
+                    <p>📍Location: {item.location}</p>
+                    <p>🕒Best Time to Visit: {item.bestTimeToVisit}</p>
                     <p>{item.description}</p>
                   </div>
                 </div>

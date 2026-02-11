@@ -30,8 +30,8 @@ const Login = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
-      <div className="bg-white w-full max-w-md rounded-xl shadow-lg p-8">
+    <div className="min-h-screen flex items-center justify-center bg-white px-4">
+      <div className="bg-white w-full max-w-md rounded-xl shadow-2xl p-8">
         
         <h2 className="text-2xl font-bold text-center text-gray-800">
           {isSignup ? "Create an Account" : "Login"}
