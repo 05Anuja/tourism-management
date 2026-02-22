@@ -13,6 +13,7 @@ import BookTour from './pages/BookTour'
 import Favourites from './pages/Favourites'
 import PlacesToVisit from './pages/PlacesToVisit'
 import NotFound from './pages/NotFound'
+import Profile from './pages/Profile'
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
             <Route path='/favourites' element={<Favourites />} />
             <Route path='/mytrips' element={<PlacesToVisit />} />
             <Route path='/booktour' element={<BookTour />} />
+            <Route path='/profile' element={<Profile />} />
             <Route path='/login' element={<Login />} />
             <Route path='*' element={<NotFound />} />
           </Routes>

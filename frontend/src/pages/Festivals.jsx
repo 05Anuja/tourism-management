@@ -18,7 +18,7 @@ const Festivals = () => {
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {festivals.map((festival) => (
           <div
-            key={festival.id}
+            key={festival._id}
             className="bg-slate-100 rounded-xl overflow-hidden shadow-md hover:shadow-orange-500/20 transition duration-300"
           >
 

@@ -22,7 +22,7 @@ const ThingsToDo = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6">
         {activities.map((item) => (
           <div
-            key={item.id}
+            key={item._id}
             // onClick={() => setSelectedItem(item)}
             className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition"
           >

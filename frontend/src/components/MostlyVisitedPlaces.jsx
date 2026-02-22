@@ -23,8 +23,8 @@ const MostlyVisitedPlaces = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4 sm:gap-6">
         {mostlyVisitedPlace.map((item) => (
           <AttractionItem
-            key={item.id}
-            id={item.id}
+            key={item._id}
+            id={item._id}
             image={item.image}
             name={item.name}
             description={item.description}

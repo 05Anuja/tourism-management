@@ -1,7 +1,16 @@
-import React, { useState } from "react"
+import React from "react"
+import axios from 'axios'
+import { useState, useContext } from "react"
+import { AttractionContext } from "../context/AttractionContext"
+import { toast } from "react-toastify"
+import { AuthContext } from "../context/AuthContext"
 
 const Login = () => {
-  const [isSignup, setIsSignup] = useState(true)
+  const [isSignup, setIsSignup] = useState(false)
+  const registerAPI = `${import.meta.env.VITE_API_BASE_URL}/api/auth/register`
+  const loginAPI = `${import.meta.env.VITE_API_BASE_URL}/api/auth/login`
+  const {navigate} = useContext(AttractionContext);
+  const {login} = useContext(AuthContext);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -16,17 +25,42 @@ const Login = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
-    if (isSignup) {
-      console.log("Signup data:", formData)
-    } else {
-      console.log("Login data:", {
-        email: formData.email,
-        password: formData.password
-      })
+    try {
+      if (isSignup) {
+        // Register
+        const res = await axios.post(registerAPI, formData);
+        // localStorage.setItem("token", res.data.token)
+        login(res.data.token, res.data.user)
+        toast.success("User Sign-In successfully!")
+        // window.location.reload();
+      } else {
+        // Login
+        const res = await axios.post(loginAPI, {
+          email: formData.email,
+          password: formData.password
+        });
+        // localStorage.setItem("token", res.data.token)
+        login(res.data.token, res.data.user)
+        toast.success("User Login Successfully!")
+      }
+      
+      navigate('/') //this will navigate to home page
+      // window.location.reload();
+    } catch (err) {
+      alert(err.response?.data?.message || "Something went wrong")
     }
+
+    // if (isSignup) {
+    //   console.log("Signup data:", formData)
+    // } else {
+    //   console.log("Login data:", {
+    //     email: formData.email,
+    //     password: formData.password
+    //   })
+    // }
   }
 
   return (

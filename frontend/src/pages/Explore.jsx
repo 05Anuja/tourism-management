@@ -52,13 +52,11 @@ const Explore = () => {
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {filteredAttractions.map((item) => {
-          const isFav = favourites.some(
-            (fav) => fav.id === item.id
-          );
-          const isFlipped = flippedCards.includes(item.id);
+          const isFav = favourites.includes(item._id);
+          const isFlipped = flippedCards.includes(item._id);
 
           return (
-            <div key={item.id} className="perspective">
+            <div key={item._id} className="perspective">
               <div
                 className={`relative w-full h-105 transition-transform duration-700 transform-style-preserve-3d
                 ${isFlipped ? "rotate-y-180" : ""}`}
@@ -79,7 +77,7 @@ const Explore = () => {
                       <p className="text-sm text-gray-600">
                         {item.description.slice(0, 100)}...
                         <span
-                          onClick={() => toggleFlip(item.id)}
+                          onClick={() => toggleFlip(item._id)}
                           className="text-orange-500 cursor-pointer ml-1 text-xs"
                         >
                           Read More
@@ -88,16 +86,19 @@ const Explore = () => {
                     </div>
 
                     <div
-                      className="flex items-center justify-between mt-4 cursor-pointer  pt-3 border-t">
+                      className="flex items-center justify-between mt-4 cursor-pointer pt-3 border-t">
                       <span
-                      onClick={() => toggleVisitLater(item)}
-                      className="text-xs px-3 py-1 bg-gray-100 rounded">
+                        onClick={() => toggleVisitLater(item)}
+                        className="text-xs px-3 py-1 bg-gray-100 rounded">
                         Visit Later
                       </span>
 
                       <button
                         className="outline-none cursor-pointer"
-                        onClick={() => toggleFavourite(item)}
+                        onClick={() => {
+                          console.log("Button is Clicked");
+                          toggleFavourite(item._id);
+                        }}
                       >
                         <Heart
                           size={22}
@@ -115,7 +116,7 @@ const Explore = () => {
                 {/* BACK */}
                 <div className="absolute inset-0 backface-hidden rotate-y-180 bg-white rounded-xl shadow-md p-5">
                   <button
-                    onClick={() => toggleFlip(item.id)}
+                    onClick={() => toggleFlip(item._id)}
                     className="absolute top-3 right-3 outline-none cursor-pointer text-gray-500 hover:text-gray-800"
                   >
                     <X size={20} />

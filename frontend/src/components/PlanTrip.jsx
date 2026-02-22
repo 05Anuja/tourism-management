@@ -21,7 +21,7 @@ const PlanTrip = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {planTrip.map((item) => (
           <div
-            key={item.id}
+            key={item._id}
             className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition"
           >
             <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">

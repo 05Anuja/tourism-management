@@ -18,7 +18,7 @@ const PlacesToVisit = () => {
     <div className="max-w-6xl mx-auto px-4 py-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {visitLater.map((item) => (
         <div
-          key={item.id}
+          key={item._id}
           className="bg-white rounded-xl shadow-md overflow-hidden"
         >
           <img

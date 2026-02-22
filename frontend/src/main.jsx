@@ -4,11 +4,14 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import AttractionContextProvider from './context/AttractionContextProvider.jsx'
+import AuthProvider from './context/AuthProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <AttractionContextProvider>
-    <App />
-  </AttractionContextProvider>
+    <AuthProvider>
+      <AttractionContextProvider>
+        <App />
+      </AttractionContextProvider>  
+    </AuthProvider>
   </BrowserRouter>,
 )
