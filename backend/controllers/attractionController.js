@@ -1,10 +1,13 @@
 import attractionModel from "../models/Attraction.js";
+import Attraction from '../models/Attraction.js'
 // import  cloudinary from "../config/cloudinary.js";
 import {v2 as cloudinary} from 'cloudinary'
 
-const addAttraction = async (req, res) => {
-  console.log(req.body)
+export const addAttraction = async (req, res) => {
+  // console.log(req.body)
   try {
+    const {name, description, category, location, bestTimeToVisit, mostlyVisited,} = req.body
+
     if (!req.file) {
 
       return res.status(400).json({ message: "Image is required" });
@@ -34,12 +37,12 @@ const addAttraction = async (req, res) => {
     });
 
     const attraction = await attractionModel.create({
-      name: req.body.name,
-      description: req.body.description,
-      category: req.body.category,
-      location: req.body.location,
-      bestTimeToVisit: req.body.bestTimeToVisit,
-      mostlyVisited: req.body.mostlyVisited,
+      name,
+      description,
+      category,
+      location,
+      bestTimeToVisit,
+      mostlyVisited,
       image: result.secure_url,
     });
 
@@ -49,4 +52,13 @@ const addAttraction = async (req, res) => {
   }
 };
 
-export { addAttraction };
+export const getAllAttractions = async (req, res) => {
+  try {
+    const attractions = await Attraction.find();
+    res.status(200).json(attractions)
+  } catch (err) {
+    res.status(500).json({
+      message: err.message
+    })
+  }
+}
