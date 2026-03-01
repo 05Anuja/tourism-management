@@ -8,10 +8,9 @@ import authMiddleware from './middleware/authMiddleware.js'
 import tourPackageRoutes from './routes/tourPackageRoutes.js'
 import authRoutes from './routes/authRoutes.js'
 import userRoute from './routes/userRoute.js'
-import userModel from './models/User.js';
-import uploadRoute from './routes/uploadRoute.js'
 import multer from 'multer'
 import attractionRoute from './routes/attractionRoute.js'
+import festivalRoute from './routes/festivalRoute.js'
 
 // App config
 const app = express();
@@ -24,11 +23,14 @@ connectDB();
 connectCloudinary();
 
 app.use('/api/tour-package', tourPackageRoutes)
+
 app.use('/api/auth', authRoutes)
 app.use('/api/user', authMiddleware, userRoute)
-app.use('/api/upload', uploadRoute)
-app.use('/api/attractions', attractionRoute)
 
+// app.use('/api/upload', uploadRoute)
+
+app.use('/api/attractions', attractionRoute)
+app.use('/api/festivals/', festivalRoute)
 
 // Error handling middleware for multer errors
 app.use((err, req, res, next) => {

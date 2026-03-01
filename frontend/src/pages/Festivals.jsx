@@ -1,10 +1,42 @@
 import React, { useContext } from 'react'
-import { AttractionContext } from '../context/AttractionContext'
-import { festivals } from '../assets/assets'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const Festivals = () => {
 
-  const { Festivals } = useContext(AttractionContext)
+  const [festivals, setFestivals] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('')
+
+  useEffect (() => {
+    const fetchFestivals = async () => {
+      try {
+        const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/festivals`)
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch festivals")
+        }
+
+        const data = await response.json()
+        setFestivals(data);
+
+      } catch (err) {
+        setError(err.message)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchFestivals();
+  }, [])
+
+  if (loading) {
+    return <p className='text-center mt-10'>Loading Festivals</p>
+  }
+
+  if (error) {
+    return <p className='text-center mt-10 text-red-500'>{error}</p>
+  }
 
   return (
     <div className="px-4 sm:px-[5vw] py-10 text-black">

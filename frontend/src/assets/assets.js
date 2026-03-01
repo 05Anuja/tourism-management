@@ -42,11 +42,6 @@ import Rasalgad_Fort from './Rasalgad_Fort.jpg'
 import Kunkeshwar_Beach from './Kunkeshwar_Beach.jpg'
 import Mahipatgad_Fort from './Mahipatgad_Fort.jpg'
 import Aadgaon_Beach from './Aadgaon_Beach.webp'
-import Ganesh_Chaturthi from './Ganesh_Chaturthi.jpg'
-import Shimga from './Shimga.jpg'
-import Velas_Turtle_Festival from './Velas_Turtle_Festival.jpeg'
-import Gudi_Padwa from './Gudi_Padwa.jpg'
-import Mango_Fest from './Mango_Fest.jpg'
 
 export const assets = {
     heroImg, img
@@ -545,52 +540,5 @@ export const planTrip = [
     }
 ]
 
-export const festivals = [
-  {
-    _id: 1,
-    name: "Ganesh Chaturthi",
-    month: "August – September",
-    location: "Entire Ratnagiri district, Maharashtra",
-    image: [Ganesh_Chaturthi],
-    description:
-      "Ganesh Chaturthi is the most important and widely celebrated festival in Ratnagiri. Homes and temples are decorated with idols of Lord Ganesh, accompanied by prayers, cultural programs, and grand processions."
-  },
-  {
-    _id: 2,
-    name: "Shimga (Konkan Holi)",
-    month: "March",
-    location: "Villages across Ratnagiri district",
-    image: [Shimga],
-    description:
-      "Shimga is the traditional Holi of the Konkan region. It is celebrated with bonfires, folk dances, village processions, and local rituals that reflect the rich cultural heritage of Ratnagiri."
-  },
-  {
-    _id: 3,
-    name: "Velas Turtle Festival",
-    month: "February – April",
-    location: "Velas Beach, Mandangad taluka, Ratnagiri",
-    image: [Velas_Turtle_Festival],
-    description:
-      "The Velas Turtle Festival focuses on the conservation of Olive Ridley turtles. Visitors can witness baby turtles being released into the sea, promoting awareness about wildlife protection."
-  },
-  {
-    _id: 4,
-    name: "Gudi Padwa",
-    month: "March – April",
-    location: "Across Ratnagiri district",
-    image: [Gudi_Padwa],
-    description:
-      "Gudi Padwa marks the Marathi New Year and the arrival of spring. Homes and streets in Ratnagiri are decorated with a traditional Gudi symbolizing prosperity, victory, and new beginnings. Families perform rituals, create rangoli, and enjoy festive Konkan cuisine."
-  },
-  {
-    _id: 5,
-    name: "Ratnagiri Mango Festival",
-    month: "April – May",
-    location: "Ratnagiri district, Maharashtra",
-    image: [Mango_Fest],
-    description:
-      "The Ratnagiri Mango Festival celebrates the famous Alphonso mangoes. The festival features mango exhibitions, tasting events, and cultural programs that attract visitors from across the state."
-  }
-]
 
 
