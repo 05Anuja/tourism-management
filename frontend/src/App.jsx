@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Explore from './pages/Explore'
+import Explore2 from './pages/Explore2'
 import Login from './pages/Login'
 import Festivals from './pages/Festivals'
 import Attractions from './pages/Attractions'
@@ -28,11 +28,11 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/explore' element={<Explore />} />
+            <Route path='/explore' element={<Explore2 />} />
             <Route path='/festivals' element={<Festivals />} />
             <Route path='/attraction/:attractionId' element={<Attractions />} />
             <Route path='/favourites' element={<Favourites />} />
-            <Route path='/mytrips' element={<PlacesToVisit />} />
+            <Route path='/placesToVisit' element={<PlacesToVisit />} />
             <Route path='/booktour' element={<BookTour />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/login' element={<Login />} />

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { activities, attractions, festivals, planTrip } from "../assets/assets";
+import { activities, planTrip } from "../assets/assets";
 import { AttractionContext } from "./AttractionContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -11,22 +11,22 @@ const AttractionContextProvider = ({ children }) => {
   const { isAuthenticated, token } = useContext(AuthContext);
 
   // ⭐ FAVOURITES STATE (GLOBAL)
-  const [favourites, setFavourites] = useState(() => {
-    const stored = localStorage.getItem("favourites");
-    return stored ? JSON.parse(stored) : [];
-  });
+  // const [favourites, setFavourites] = useState(() => {
+  //   const stored = localStorage.getItem("favourites");
+  //   return stored ? JSON.parse(stored) : [];
+  // });
 
   // ⭐ VISIT LATER STATE
-  const [visitLater, setVisitLater] = useState(() => {
-    const storedPlaces = localStorage.getItem("visit_later");
-    return storedPlaces ? JSON.parse(storedPlaces) : [];
-  });
+  // const [visitLater, setVisitLater] = useState(() => {
+  //   const storedPlaces = localStorage.getItem("visit_later");
+  //   return storedPlaces ? JSON.parse(storedPlaces) : [];
+  // });
 
   // Persist favourites & visit later
-  useEffect(() => {
-    localStorage.setItem("favourites", JSON.stringify(favourites));
-    localStorage.setItem("visit_later", JSON.stringify(visitLater));
-  }, [favourites, visitLater]);
+  // useEffect(() => {
+  //   localStorage.setItem("favourites", JSON.stringify(favourites));
+  //   localStorage.setItem("visit_later", JSON.stringify(visitLater));
+  // }, [favourites, visitLater]);
 
   // ❤️ Toggle Favourite (Backend)
   // const toggleFavourite = async (attractionId) => {
@@ -68,12 +68,15 @@ const AttractionContextProvider = ({ children }) => {
   //   }
   // };
 
+  const [favourites, setFavourites] = useState([])
+  const [visitLater, setVisitLater] = useState([])
+
   const toggleFavourite = async (attractionId) => {
-  console.log("Clicked ID:", attractionId);
+  // console.log("Clicked ID:", attractionId);
 
   if (!attractionId) {
     toast.error("Invalid attraction ID");
-    console.log(token)
+    // console.log(token)
     return;
   }
 
@@ -100,7 +103,7 @@ const AttractionContextProvider = ({ children }) => {
 
   try {
     const res = await axios.post(
-      `${import.meta.env.VITE_API_BASE_URL}/api/user/toggle-favourite/${attractionId}`,
+      `${import.meta.env.VITE_API_BASE_URL}/api/user/favourites/${attractionId}`,
       {},
       {
         headers: {
@@ -109,7 +112,9 @@ const AttractionContextProvider = ({ children }) => {
       }
     );
 
-    setFavourites(res.data.favourites);
+    // console.log(res.data.favourites)
+
+    setFavourites(res.data.favourites.map(fav => fav._id));
 
   } catch (err) {
     console.log(err);
@@ -139,45 +144,76 @@ const AttractionContextProvider = ({ children }) => {
   //   }
   // };
 
-  const toggleVisitLater = (item) => {
-  if (!isAuthenticated) {
+  const toggleVisitLater = async (attractionId) => {
+
+    if (!attractionId) {
+      toast.error("Invalid attraction Id");
+      return;
+    }
+
+  if (!token) {
     toast.error("Please signIn/login to continue!");
     return;
   }
 
   const exists = visitLater.find(
-    (visitItem) => visitItem._id === item._id
+    (visitItem) => visitItem._id === attractionId._id
   );
 
   if (exists) {
     setVisitLater((prev) =>
-      prev.filter((visitItem) => visitItem._id !== item._id)
+      prev.filter(id => id !== attractionId)
     );
     toast.info("Removed from Visit Later");
   } else {
-    setVisitLater((prev) => [...prev, item]);
+    setVisitLater((prev) => [...prev, attractionId]);
     toast.success("Added to Visit Later");
   }
+
+  try {
+    const res = await axios.post(
+      `${import.meta.env.VITE_API_BASE_URL}/api/user/visitLater/${attractionId}`,
+      {},
+      {
+        headers: {
+          Authorization: `Bearer ${token}`
+        },
+      }
+    );
+
+    setVisitLater(res.data.visitLater.map(vL => vL._id))
+  } catch (error) {
+    console.log(error)
+  }
+
 };
 
 
-  // ✅ FIXED: remove warning by avoiding direct setState in effect body
-  useEffect(() => {
-    if (!isAuthenticated) {
-      Promise.resolve().then(() => {
-        setFavourites([]);
-        setVisitLater([]);
-      });
 
-      localStorage.removeItem("favourites");
-      localStorage.removeItem("visit_later");
+  useEffect(() => {
+    const fetchUserData = async () => {
+      if (!token) return;
+      try {
+        const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/user/profile-data`, {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        })  
+
+        // console.log(res.data)
+
+        setFavourites(res.data.favourites.map(f => f._id))
+        setVisitLater(res.data.visitLater.map(f => f._id))
+      } catch (error) {
+        console.log(error)
+      }
     }
-  }, [isAuthenticated]);
+
+    fetchUserData();
+  }, [])
 
   const value = {
-    attractions,
     activities,
-    festivals,
     planTrip,
     favourites,
     toggleFavourite,

@@ -63,7 +63,7 @@ const Navbar = () => {
                   <Link to="/favourites" className="px-4 py-2 hover:bg-slate-700">
                     Favourites
                   </Link>
-                  <Link to="/mytrips" className="px-4 py-2 hover:bg-slate-700">
+                  <Link to="/placesToVisit" className="px-4 py-2 hover:bg-slate-700">
                     Visit Later
                   </Link>
                   <Link to="/booktour" className="px-4 py-2 hover:bg-slate-700">

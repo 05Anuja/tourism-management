@@ -11,6 +11,7 @@ import userRoute from './routes/userRoute.js'
 import multer from 'multer'
 import attractionRoute from './routes/attractionRoute.js'
 import festivalRoute from './routes/festivalRoute.js'
+import helmet from 'helmet'
 
 // App config
 const app = express();
@@ -18,6 +19,7 @@ const app = express();
 // middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(helmet());
 app.use(cors());
 connectDB();
 connectCloudinary();

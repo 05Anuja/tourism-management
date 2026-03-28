@@ -1,9 +1,27 @@
 import React, { useContext } from 'react';
-import { AttractionContext } from '../context/AttractionContext';
+// import { AttractionContext } from '../context/AttractionContext';
 import AttractionItem from './AttractionItem';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 const MostlyVisitedPlaces = () => {
-  const { attractions } = useContext(AttractionContext);
+  // const { attractions } = useContext(AttractionContext);
+  const [attractions, setAttractions] = useState([])
+
+  useEffect(() => {
+    const fetchAttractions = async () => {
+      try {
+        const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/attractions`)
+        // console.log(res.data)
+        setAttractions(res.data)
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchAttractions()
+  }, [])
 
   const mostlyVisitedPlace = attractions.filter(
     (item) => item.mostlyVisited === true

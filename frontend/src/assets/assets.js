@@ -49,404 +49,404 @@ export const assets = {
 
 
 
-export const attractions = [
-  {
-    _id: 1,
-    name: "Ganapatipule Beach",
-    location: "Ratnagiri district, Maharashtra (Konkan coast)",
-    bestTimeToVisit: 'October – March',
-    category: "Beaches",
-    description:
-      "Ganapatipule Beach is known for its clean shoreline, calm waves, and peaceful surroundings. The nearby Ganpatipule Temple adds a spiritual charm to the place. It is perfect for relaxing walks and beautiful sunset views.",
-    image: [Ganapatipule_Beach],
-    mostlyVisited: true
-  },
-  {
-    _id: 2,
-    name: "Thibaw Palace",
-    bestTimeToVisit: "October – February",
-    location: "Ratnagiri city",
-    category: "Temples",
-    description: 
-        "Thibaw Palace is a historic royal residence known for its exquisite architecture and cultural heritage. Once home to the last king of Burma, the palace reflects intricate carvings, grand halls, and regal charm. Visitors can explore the palace grounds to experience a glimpse of royal life and historical significance.",
-    image: [Thibaw_Palace],
-    mostlyVisited: true
-  },
-  {
-    _id: 3,
-    name: "Velneshwar Temple",
-    location: "Velneshwar village, Ratnagiri",
-    bestTimeToVisit: "October – February",
-    category: "Temples",
-    description:
-      "Velneshwar Temple is an ancient Shiva temple located close to the seashore. The calm environment and rhythmic sound of waves create a peaceful spiritual experience. Visitors often combine temple visits with time at the nearby beach.",
-    image: [Velneshwar_Temple],
-    mostlyVisited: true
-  },
-  {
-    _id: 4,
-    name: "Jaigad Fort",
-    location: "Jaigad village, near Ganapatipule",
-    bestTimeToVisit: "October – February",
-    category: "Forts",
-    description:
-      "Jaigad Fort stands at the meeting point of the Shastri River and the Arabian Sea. The fort offers breathtaking panoramic views and reflects the region’s rich Maratha history. It is a favorite spot for photography lovers.",
-    image: [Jaigad_Fort],
-    mostlyVisited: true
-  },
-  {
-    _id: 5,
-    name: "Bhatye Beach",
-    bestTimeToVisit: "October – March",
-    location: "Ratnagiri city",
-    category: "Beaches",
-    description:
-      "Bhatye Beach is a long and wide beach located close to Ratnagiri city. Its gentle waves and open shoreline make it ideal for family outings. The beach is especially beautiful during evening sunsets.",
-    image: [Bhatye_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 6,
-    name: "Pawas Ashram",
-    location: "Pawas village, Ratnagiri",
-    bestTimeToVisit: "October – March",
-    category: "Temples",
-    description:
-      "Pawas Ashram is a peaceful spiritual retreat founded by Swami Swaroopanand. Surrounded by greenery and silence, it attracts visitors seeking calmness and inner peace. The ashram offers a refreshing break from busy city life.",
-    image: [Pawas],
-    mostlyVisited: false
-  },
-  {
-    _id: 7,
-    name: "Mandangad Fort",
-    location: "Dapoli taluka, Ratnagiri",
-    bestTimeToVisit: "October – January",
-    category: "Forts",
-    description:
-      "Mandangad Fort is a hill fort known for its trekking routes and scenic views. The fort offers a glimpse into ancient military architecture. It is ideal for adventure lovers and nature enthusiasts.",
-    image: [Mandangad_Fort],
-    mostlyVisited: true
-  },
-  {
-    _id: 8,
-    name: "Aare Ware Beach",
-    bestTimeToVisit: "October – March",
-    location: "Near Ganapatipule",
-    category: "Beaches",
-    description:
-      "Aare Ware Beach consists of two beautiful beaches separated by a hill. The viewpoint above the beach offers stunning views of the coastline. It is a popular spot for sunset watching and photography.",
-    image: [Aare_Ware_Beach],
-    mostlyVisited: true
-  },
-  {
-    _id: 9,
-    name: "Parshuram Temple",
-    location: "Chiplun taluka, Ratnagiri",
-    bestTimeToVisit: "October – February",
-    category: "Temples",
-    description:
-      "Parshuram Temple is located on a hilltop surrounded by lush greenery. The temple offers a calm spiritual atmosphere along with scenic views. It is believed to be associated with Lord Parshuram.",
-    image: [Parshuram_Temple],
-    mostlyVisited: true
-  },
-  {
-    _id: 10,
-    name: "Ratnadurg Fort",
-    bestTimeToVisit: "October – February",
-    location: "Ratnagiri city coastline",
-    category: "Forts",
-    description:
-      "Ratnadurg Fort is an ancient fort surrounded by the Arabian Sea on three sides. The fort has strong walls and historic structures. Inside the fort, visitors can also find the Bhagwati Temple.",
-    image: [Ratnadurg_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 11,
-    name: "Velneshwar Beach",
-    location: "Velneshwar village, Ratnagiri",
-    bestTimeToVisit: "October – February",
-    category: "Beaches",
-    description:
-      "Velneshwar Beach is known for its clean sand and calm waters. The beach offers a peaceful environment away from crowds. It is often visited along with the nearby Velneshwar Temple.",
-    image: [Velneshwar_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 12,
-    name: "Marleshwar Temple",
-    location: "Sangameshwar taluka, Ratnagiri",
-    bestTimeToVisit: "October – February",
-    category: "Temples",
-    description:
-      "Marleshwar Temple is a cave temple surrounded by dense forests. During the monsoon season, nearby waterfalls enhance its beauty. The temple offers a unique spiritual experience close to nature.",
-    image: [Marleshwar_Temple],
-    mostlyVisited: false
-  },
-  {
-    _id: 13,
-    name: "Vijaydurg Fort",
-    category: "Forts",
-    bestTimeToVisit: "October – February",
-    location: "Devgad taluka (near Ratnagiri border)",
-    description:
-      "Vijaydurg Fort is one of the strongest sea forts of the Maratha Empire. It played a major role in naval defense. The fort showcases impressive architecture and rich historical importance.",
-    image: [Vijaydurga_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 14,
-    name: "Ganeshgule Beach",
-    bestTimeToVisit: "October – March",
-    location: "Sangameshwar taluka, Ratnagiri",
-    category: "Beaches",
-    description:
-      "Ganeshgule Beach is a quiet and less crowded beach near Ganpatipule. The beach offers clean surroundings and a relaxing atmosphere. It is ideal for visitors looking for peace and solitude.",
-    image: [Ganeshgule_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 15,
-    name: "Purnagad Beach",
-    bestTimeToVisit: "October – March",
-    location: "Near Purnagad Fort",
-    category: "Beaches",
-    description:
-      "Purnagad Beach is a peaceful beach located near Purnagad Fort. The beach offers a natural and untouched environment. It is ideal for relaxing walks and enjoying coastal beauty.",
-    image: [Purnagad_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 16,
-    name: "Purnagad Fort",
-    bestTimeToVisit: "October – February",
-    location: "Near Devgad, Sindhudurg - Ratnagiri border",
-    category: "Forts",
-    description:
-      "Purnagad Fort is a coastal fort reflecting the region’s naval history. The fort offers scenic sea views and historic remains. It is a peaceful place to explore history and nature together.",
-    image: [Purngad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 17,
-    name: "Anjarle Beach",
-    bestTimeToVisit: "October – March",
-    location: "Dapoli taluka",
-    category: "Beaches",
-    description:
-      "Anjarle Beach is clean, quiet, and less crowded compared to popular beaches. It offers calm waters and a relaxed atmosphere. The beach is perfect for nature lovers and peaceful travelers.",
-    image: [Anjarle_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 18,
-    name: "Chandika Mandir",
-    bestTimeToVisit: "October – February",
-    location: "Near Dapoli, Ratnagiri",
-    category: "Temples",
-    description:
-      "Chandika Mandir is a small local temple known for its peaceful environment. It holds cultural significance for nearby villages. Visitors often experience a calm and spiritual atmosphere here.",
-    image: [Chandika_Mandir],
-    mostlyVisited: false
-  },
-  {
-    _id: 19,
-    name: "Kunkeshwar Beach",
-    bestTimeToVisit: "October – March",
-    location: "Devgad taluka",
-    category: "Beaches",
-    description:
-      "Kunkeshwar Beach is known for its long coastline and peaceful surroundings. The beach is clean and ideal for quiet walks. It is often visited along with the nearby Kunkeshwar Temple.",
-    image: [Kunkeshwar_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 20,
-    name: "Guhagar Beach",
-    bestTimeToVisit: "October – March",
-    location: "Guhagar taluka, Ratnagiri",
-    category: "Beaches",
-    description:
-      "Guhagar Beach is a clean and wide beach famous for its white sand. The calm environment makes it suitable for family visits. The beach is ideal for relaxing evenings.",
-    image: [Guhagar_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 21,
-    name: "Yashwantgad Fort",
-    bestTimeToVisit: "October – January",
-    location: "Redi-Vengurla belt (near Ratnagiri region)",
-    category: "Forts",
-    description:
-      "Yashwantgad Fort is a hill fort surrounded by dense greenery. The fort offers scenic views and trekking opportunities. It is ideal for adventure seekers.",
-    image: [Yashwantgad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 22,
-    name: "Velas Beach",
-    bestTimeToVisit: "February – April",
-    location: "Mandangad taluka (turtle festival area)",
-    category: "Beaches",
-    description:
-      "Velas Beach is famous for its clean sand and calm waters. The beach is also known for turtle conservation activities. It offers a peaceful natural experience.",
-    image: [Velas_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 23,
-    name: "Kelshi Beach",
-    bestTimeToVisit: "October – March",
-    location: "Dapoli taluka",
-    category: "Beaches",
-    description:
-      "Kelshi Beach is a long and peaceful beach with soft sand. The calm waves make it ideal for relaxation. It is perfect for a quiet getaway.",
-    image: [Kelshi_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 24,
-    name: "Palgad Fort",
-    bestTimeToVisit: "October – January",
-    location: "Near Sakharpa, Ratnagiri",
-    category: "Forts",
-    description:
-      "Palgad Fort is a lesser-known fort surrounded by forests. It offers a peaceful trekking experience. The fort provides scenic views of the surrounding region.",
-    image: [Palgad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 25,
-    name: "Murud Beach",
-    bestTimeToVisit: "October – March",
-    location: "Dapoli taluka, Ratnagiri",
-    category: "Beaches",
-    description:
-      "Murud Beach is known for its clean shoreline and calm environment. The beach is suitable for peaceful walks. It is a good spot for sunset views.",
-    image: [Murud_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 26,
-    name: "Sumargad Fort",
-    bestTimeToVisit: "October – January",
-    location: "Near Mandangad region, Ratnagiri",
-    category: "Forts",
-    description:
-      "Sumargad Fort is a hill fort offering scenic valley views. It is surrounded by dense greenery. The fort is ideal for nature and trekking enthusiasts.",
-    image: [Sumargad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 27,
-    name: "Aadgaon Beach",
-    bestTimeToVisit: "October – March",
-    location: "Near Ratnagiri city",
-    category: "Beaches",
-    description:
-      "Aadgaon Beach is a quiet and untouched beach. The beach offers clean surroundings and a peaceful atmosphere. It is ideal for solitude seekers.",
-    image: [Aadgaon_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 28,
-    name: "Bhavangad Fort",
-    bestTimeToVisit: "October – January",
-    location: "Lanja taluka, Ratnagiri",
-    category: "Forts",
-    description:
-      "Bhavangad Fort is a hill fort surrounded by dense forests. It offers peaceful trekking routes. The fort has historical significance.",
-    image: [Bhavangad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 29,
-    name: "Madban Beach",
-    bestTimeToVisit: "October – March",
-    location: "Rajapur taluka, Ratnagiri",
-    category: "Beaches",
-    description:
-      "Madban Beach is known for its rocky shoreline and scenic beauty. The beach is calm and less crowded. It is suitable for peaceful visits.",
-    image: [Madban_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 30,
-    name: "Gopalgad Fort",
-    bestTimeToVisit: "October – February",
-    location: "Anjanwel (Dabhol), Ratnagiri",
-    category: "Forts",
-    description:
-      "Gopalgad Fort is a sea fort offering stunning ocean views. It has strong walls and historical structures. The fort is peaceful and scenic.",
-    image: [Gopalgad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 31,
-    name: "Kajir Bhati Beach",
-    bestTimeToVisit: "October – March",
-    location: "Near Guhagar, Ratnagiri",
-    category: "Beaches",
-    description:
-      "Kajir Bhati Beach is a small and quiet beach. It is surrounded by greenery and natural beauty. The beach is ideal for peaceful relaxation.",
-    image: [Kajir_Bhati_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 32,
-    name: "Mahipatgad Fort",
-    bestTimeToVisit: "October – January",
-    location: "Mandangad taluka, Ratnagiri",
-    category: "Forts",
-    description:
-      "Mahipatgad Fort is a hill fort known for its scenic trekking routes. The fort offers panoramic views of Konkan. It is rich in history.",
-    image: [Mahipatgad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 33,
-    name: "Dabhol Beach",
-    bestTimeToVisit: "October – March",
-    location: "Dabhol town, Ratnagiri",
-    category: "Beaches",
-    description:
-      "Dabhol Beach is a peaceful beach near a fishing village. The beach offers clean surroundings and calm waters. It is ideal for relaxed visits.",
-    image: [Dabhol_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 34,
-    name: "Rasalgad Fort",
-    bestTimeToVisit: "October – January",
-    location: "Near Khed-Chiplun road, Ratnagiri",
-    category: "Forts",
-    description:
-      "Rasalgad Fort is a hill fort with strong historical importance. The fort offers scenic views and trekking paths. It attracts history lovers.",
-    image: [Rasalgad_Fort],
-    mostlyVisited: false
-  },
-  {
-    _id: 35,
-    name: "Ladghar Beach",
-    bestTimeToVisit: "October – March",
-    location: "Dapoli taluka",
-    category: "Beaches",
-    description:
-      "Ladghar Beach is also known as Tamas Teertha. The beach is clean and family-friendly. It is suitable for swimming and relaxing.",
-    image: [Ladghar_Beach],
-    mostlyVisited: false
-  },
-  {
-    _id: 36,
-    name: "Patit Pavan Mandir",
-    category: "Temples",
-    location: "Ratnagiri city",
-    bestTimeToVisit: "All year (best in winter)",
-    description:
-      "Patit Pavan Mandir is a historic temple in Ratnagiri known for its message of social equality, welcoming people of all castes to worship together.",
-    image: [Pavan_Mandir],
-    mostlyVisited: false
-  }
-];
+// export const attractions = [
+//   {
+//     _id: 1,
+//     name: "Ganapatipule Beach",
+//     location: "Ratnagiri district, Maharashtra (Konkan coast)",
+//     bestTimeToVisit: 'October – March',
+//     category: "Beaches",
+//     description:
+//       "Ganapatipule Beach is known for its clean shoreline, calm waves, and peaceful surroundings. The nearby Ganpatipule Temple adds a spiritual charm to the place. It is perfect for relaxing walks and beautiful sunset views.",
+//     image: [Ganapatipule_Beach],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 2,
+//     name: "Thibaw Palace",
+//     bestTimeToVisit: "October – February",
+//     location: "Ratnagiri city",
+//     category: "Temples",
+//     description: 
+//         "Thibaw Palace is a historic royal residence known for its exquisite architecture and cultural heritage. Once home to the last king of Burma, the palace reflects intricate carvings, grand halls, and regal charm. Visitors can explore the palace grounds to experience a glimpse of royal life and historical significance.",
+//     image: [Thibaw_Palace],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 3,
+//     name: "Velneshwar Temple",
+//     location: "Velneshwar village, Ratnagiri",
+//     bestTimeToVisit: "October – February",
+//     category: "Temples",
+//     description:
+//       "Velneshwar Temple is an ancient Shiva temple located close to the seashore. The calm environment and rhythmic sound of waves create a peaceful spiritual experience. Visitors often combine temple visits with time at the nearby beach.",
+//     image: [Velneshwar_Temple],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 4,
+//     name: "Jaigad Fort",
+//     location: "Jaigad village, near Ganapatipule",
+//     bestTimeToVisit: "October – February",
+//     category: "Forts",
+//     description:
+//       "Jaigad Fort stands at the meeting point of the Shastri River and the Arabian Sea. The fort offers breathtaking panoramic views and reflects the region’s rich Maratha history. It is a favorite spot for photography lovers.",
+//     image: [Jaigad_Fort],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 5,
+//     name: "Bhatye Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Ratnagiri city",
+//     category: "Beaches",
+//     description:
+//       "Bhatye Beach is a long and wide beach located close to Ratnagiri city. Its gentle waves and open shoreline make it ideal for family outings. The beach is especially beautiful during evening sunsets.",
+//     image: [Bhatye_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 6,
+//     name: "Pawas Ashram",
+//     location: "Pawas village, Ratnagiri",
+//     bestTimeToVisit: "October – March",
+//     category: "Temples",
+//     description:
+//       "Pawas Ashram is a peaceful spiritual retreat founded by Swami Swaroopanand. Surrounded by greenery and silence, it attracts visitors seeking calmness and inner peace. The ashram offers a refreshing break from busy city life.",
+//     image: [Pawas],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 7,
+//     name: "Mandangad Fort",
+//     location: "Dapoli taluka, Ratnagiri",
+//     bestTimeToVisit: "October – January",
+//     category: "Forts",
+//     description:
+//       "Mandangad Fort is a hill fort known for its trekking routes and scenic views. The fort offers a glimpse into ancient military architecture. It is ideal for adventure lovers and nature enthusiasts.",
+//     image: [Mandangad_Fort],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 8,
+//     name: "Aare Ware Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Near Ganapatipule",
+//     category: "Beaches",
+//     description:
+//       "Aare Ware Beach consists of two beautiful beaches separated by a hill. The viewpoint above the beach offers stunning views of the coastline. It is a popular spot for sunset watching and photography.",
+//     image: [Aare_Ware_Beach],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 9,
+//     name: "Parshuram Temple",
+//     location: "Chiplun taluka, Ratnagiri",
+//     bestTimeToVisit: "October – February",
+//     category: "Temples",
+//     description:
+//       "Parshuram Temple is located on a hilltop surrounded by lush greenery. The temple offers a calm spiritual atmosphere along with scenic views. It is believed to be associated with Lord Parshuram.",
+//     image: [Parshuram_Temple],
+//     mostlyVisited: true
+//   },
+//   {
+//     _id: 10,
+//     name: "Ratnadurg Fort",
+//     bestTimeToVisit: "October – February",
+//     location: "Ratnagiri city coastline",
+//     category: "Forts",
+//     description:
+//       "Ratnadurg Fort is an ancient fort surrounded by the Arabian Sea on three sides. The fort has strong walls and historic structures. Inside the fort, visitors can also find the Bhagwati Temple.",
+//     image: [Ratnadurg_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 11,
+//     name: "Velneshwar Beach",
+//     location: "Velneshwar village, Ratnagiri",
+//     bestTimeToVisit: "October – February",
+//     category: "Beaches",
+//     description:
+//       "Velneshwar Beach is known for its clean sand and calm waters. The beach offers a peaceful environment away from crowds. It is often visited along with the nearby Velneshwar Temple.",
+//     image: [Velneshwar_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 12,
+//     name: "Marleshwar Temple",
+//     location: "Sangameshwar taluka, Ratnagiri",
+//     bestTimeToVisit: "October – February",
+//     category: "Temples",
+//     description:
+//       "Marleshwar Temple is a cave temple surrounded by dense forests. During the monsoon season, nearby waterfalls enhance its beauty. The temple offers a unique spiritual experience close to nature.",
+//     image: [Marleshwar_Temple],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 13,
+//     name: "Vijaydurg Fort",
+//     category: "Forts",
+//     bestTimeToVisit: "October – February",
+//     location: "Devgad taluka (near Ratnagiri border)",
+//     description:
+//       "Vijaydurg Fort is one of the strongest sea forts of the Maratha Empire. It played a major role in naval defense. The fort showcases impressive architecture and rich historical importance.",
+//     image: [Vijaydurga_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 14,
+//     name: "Ganeshgule Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Sangameshwar taluka, Ratnagiri",
+//     category: "Beaches",
+//     description:
+//       "Ganeshgule Beach is a quiet and less crowded beach near Ganpatipule. The beach offers clean surroundings and a relaxing atmosphere. It is ideal for visitors looking for peace and solitude.",
+//     image: [Ganeshgule_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 15,
+//     name: "Purnagad Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Near Purnagad Fort",
+//     category: "Beaches",
+//     description:
+//       "Purnagad Beach is a peaceful beach located near Purnagad Fort. The beach offers a natural and untouched environment. It is ideal for relaxing walks and enjoying coastal beauty.",
+//     image: [Purnagad_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 16,
+//     name: "Purnagad Fort",
+//     bestTimeToVisit: "October – February",
+//     location: "Near Devgad, Sindhudurg - Ratnagiri border",
+//     category: "Forts",
+//     description:
+//       "Purnagad Fort is a coastal fort reflecting the region’s naval history. The fort offers scenic sea views and historic remains. It is a peaceful place to explore history and nature together.",
+//     image: [Purngad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 17,
+//     name: "Anjarle Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Dapoli taluka",
+//     category: "Beaches",
+//     description:
+//       "Anjarle Beach is clean, quiet, and less crowded compared to popular beaches. It offers calm waters and a relaxed atmosphere. The beach is perfect for nature lovers and peaceful travelers.",
+//     image: [Anjarle_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 18,
+//     name: "Chandika Mandir",
+//     bestTimeToVisit: "October – February",
+//     location: "Near Dapoli, Ratnagiri",
+//     category: "Temples",
+//     description:
+//       "Chandika Mandir is a small local temple known for its peaceful environment. It holds cultural significance for nearby villages. Visitors often experience a calm and spiritual atmosphere here.",
+//     image: [Chandika_Mandir],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 19,
+//     name: "Kunkeshwar Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Devgad taluka",
+//     category: "Beaches",
+//     description:
+//       "Kunkeshwar Beach is known for its long coastline and peaceful surroundings. The beach is clean and ideal for quiet walks. It is often visited along with the nearby Kunkeshwar Temple.",
+//     image: [Kunkeshwar_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 20,
+//     name: "Guhagar Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Guhagar taluka, Ratnagiri",
+//     category: "Beaches",
+//     description:
+//       "Guhagar Beach is a clean and wide beach famous for its white sand. The calm environment makes it suitable for family visits. The beach is ideal for relaxing evenings.",
+//     image: [Guhagar_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 21,
+//     name: "Yashwantgad Fort",
+//     bestTimeToVisit: "October – January",
+//     location: "Redi-Vengurla belt (near Ratnagiri region)",
+//     category: "Forts",
+//     description:
+//       "Yashwantgad Fort is a hill fort surrounded by dense greenery. The fort offers scenic views and trekking opportunities. It is ideal for adventure seekers.",
+//     image: [Yashwantgad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 22,
+//     name: "Velas Beach",
+//     bestTimeToVisit: "February – April",
+//     location: "Mandangad taluka (turtle festival area)",
+//     category: "Beaches",
+//     description:
+//       "Velas Beach is famous for its clean sand and calm waters. The beach is also known for turtle conservation activities. It offers a peaceful natural experience.",
+//     image: [Velas_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 23,
+//     name: "Kelshi Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Dapoli taluka",
+//     category: "Beaches",
+//     description:
+//       "Kelshi Beach is a long and peaceful beach with soft sand. The calm waves make it ideal for relaxation. It is perfect for a quiet getaway.",
+//     image: [Kelshi_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 24,
+//     name: "Palgad Fort",
+//     bestTimeToVisit: "October – January",
+//     location: "Near Sakharpa, Ratnagiri",
+//     category: "Forts",
+//     description:
+//       "Palgad Fort is a lesser-known fort surrounded by forests. It offers a peaceful trekking experience. The fort provides scenic views of the surrounding region.",
+//     image: [Palgad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 25,
+//     name: "Murud Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Dapoli taluka, Ratnagiri",
+//     category: "Beaches",
+//     description:
+//       "Murud Beach is known for its clean shoreline and calm environment. The beach is suitable for peaceful walks. It is a good spot for sunset views.",
+//     image: [Murud_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 26,
+//     name: "Sumargad Fort",
+//     bestTimeToVisit: "October – January",
+//     location: "Near Mandangad region, Ratnagiri",
+//     category: "Forts",
+//     description:
+//       "Sumargad Fort is a hill fort offering scenic valley views. It is surrounded by dense greenery. The fort is ideal for nature and trekking enthusiasts.",
+//     image: [Sumargad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 27,
+//     name: "Aadgaon Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Near Ratnagiri city",
+//     category: "Beaches",
+//     description:
+//       "Aadgaon Beach is a quiet and untouched beach. The beach offers clean surroundings and a peaceful atmosphere. It is ideal for solitude seekers.",
+//     image: [Aadgaon_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 28,
+//     name: "Bhavangad Fort",
+//     bestTimeToVisit: "October – January",
+//     location: "Lanja taluka, Ratnagiri",
+//     category: "Forts",
+//     description:
+//       "Bhavangad Fort is a hill fort surrounded by dense forests. It offers peaceful trekking routes. The fort has historical significance.",
+//     image: [Bhavangad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 29,
+//     name: "Madban Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Rajapur taluka, Ratnagiri",
+//     category: "Beaches",
+//     description:
+//       "Madban Beach is known for its rocky shoreline and scenic beauty. The beach is calm and less crowded. It is suitable for peaceful visits.",
+//     image: [Madban_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 30,
+//     name: "Gopalgad Fort",
+//     bestTimeToVisit: "October – February",
+//     location: "Anjanwel (Dabhol), Ratnagiri",
+//     category: "Forts",
+//     description:
+//       "Gopalgad Fort is a sea fort offering stunning ocean views. It has strong walls and historical structures. The fort is peaceful and scenic.",
+//     image: [Gopalgad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 31,
+//     name: "Kajir Bhati Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Near Guhagar, Ratnagiri",
+//     category: "Beaches",
+//     description:
+//       "Kajir Bhati Beach is a small and quiet beach. It is surrounded by greenery and natural beauty. The beach is ideal for peaceful relaxation.",
+//     image: [Kajir_Bhati_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 32,
+//     name: "Mahipatgad Fort",
+//     bestTimeToVisit: "October – January",
+//     location: "Mandangad taluka, Ratnagiri",
+//     category: "Forts",
+//     description:
+//       "Mahipatgad Fort is a hill fort known for its scenic trekking routes. The fort offers panoramic views of Konkan. It is rich in history.",
+//     image: [Mahipatgad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 33,
+//     name: "Dabhol Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Dabhol town, Ratnagiri",
+//     category: "Beaches",
+//     description:
+//       "Dabhol Beach is a peaceful beach near a fishing village. The beach offers clean surroundings and calm waters. It is ideal for relaxed visits.",
+//     image: [Dabhol_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 34,
+//     name: "Rasalgad Fort",
+//     bestTimeToVisit: "October – January",
+//     location: "Near Khed-Chiplun road, Ratnagiri",
+//     category: "Forts",
+//     description:
+//       "Rasalgad Fort is a hill fort with strong historical importance. The fort offers scenic views and trekking paths. It attracts history lovers.",
+//     image: [Rasalgad_Fort],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 35,
+//     name: "Ladghar Beach",
+//     bestTimeToVisit: "October – March",
+//     location: "Dapoli taluka",
+//     category: "Beaches",
+//     description:
+//       "Ladghar Beach is also known as Tamas Teertha. The beach is clean and family-friendly. It is suitable for swimming and relaxing.",
+//     image: [Ladghar_Beach],
+//     mostlyVisited: false
+//   },
+//   {
+//     _id: 36,
+//     name: "Patit Pavan Mandir",
+//     category: "Temples",
+//     location: "Ratnagiri city",
+//     bestTimeToVisit: "All year (best in winter)",
+//     description:
+//       "Patit Pavan Mandir is a historic temple in Ratnagiri known for its message of social equality, welcoming people of all castes to worship together.",
+//     image: [Pavan_Mandir],
+//     mostlyVisited: false
+//   }
+// ];
 
 export const activities = [
     {

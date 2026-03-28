@@ -1,9 +1,12 @@
 import express from 'express'
-import { toggleFavourite } from '../controllers/userController.js';
-import authMiddleware from '../middleware/authMiddleware.js';
+import { getFavourites, getPlacesToVisit, getProfileData, handleFavourites, handleVisitLater } from '../controllers/userController.js';
 
 const router = express.Router();
 
-router.post('/toggle-favourite/:id', authMiddleware, toggleFavourite);
+router.post('/favourites/:id', handleFavourites);
+router.post('/visitLater/:id', handleVisitLater)
+router.get('/profile-data', getProfileData)
+router.get('/favourites', getFavourites)
+router.get('/placesToVisit', getPlacesToVisit)
 
 export default router;

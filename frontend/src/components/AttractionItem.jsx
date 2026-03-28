@@ -10,7 +10,7 @@ const AttractionItem = ({  image, name, description }) => {
       {/* Image wrapper */}
       <div className="overflow-hidden rounded-lg bg-gray-100">
         <img
-          src={image[0]}
+          src={image}
           alt={name}
           className="w-full h-40 sm:h-44 md:h-48 object-cover transition-transform duration-300 group-hover:scale-105"
         />

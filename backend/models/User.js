@@ -18,12 +18,18 @@ const userSchema = new mongoose.Schema({
     favourites: [
         {
             type: mongoose.Schema.Types.ObjectId,
+            attractionId: String,
+            name: String,
+            image: String,
             ref: "Attraction"
         }
     ],
-    tripPlan: [
+    visitLater: [
         {
             type: mongoose.Schema.Types.ObjectId,
+            attractionId: String,
+            name: String,
+            image: String,
             ref: "Attraction"
         }
     ],

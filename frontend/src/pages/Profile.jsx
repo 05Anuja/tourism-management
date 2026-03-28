@@ -1,11 +1,16 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
-import { AttractionContext } from "../context/AttractionContext";
+// import { AttractionContext } from "../context/AttractionContext";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Profile = () => {
   const { user, logout, isAuthenticated } = useContext(AuthContext);
-  const { favourites, visitLater } = useContext(AttractionContext);
+  // const { favourites, visitLater } = useContext(AttractionContext);
+
+  const [favourites, setFavourites] = useState([]);
+  const [visitLater, setVisitLater] = useState([]);
+
   const navigate = useNavigate();
 
   // Redirect if not logged in
@@ -14,6 +19,22 @@ const Profile = () => {
     navigate("/login");
     }
   }, [isAuthenticated, navigate]) 
+
+  useEffect (() => {
+    const fetchProfileData = async () => {
+      const res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/user/profile-data`,
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem('token')}`
+          }
+        }
+      );
+      setFavourites(res.data.favourites);
+      setVisitLater(res.data.visitLater);
+    }
+
+    fetchProfileData();
+  },[])
   
 
   const handleLogout = () => {
@@ -25,7 +46,7 @@ const Profile = () => {
     <div className="min-h-screen bg-white py-15 px-4 sm:px-10">
 
       {/* Page Title */}
-      <h1 className="text-3xl font-bold mb-8 text-center text-slate-800">
+      <h1 className="text-3xl font-bold mb-8 text-center text-slate-900">
         My Profile
       </h1>
 
@@ -34,7 +55,7 @@ const Profile = () => {
 
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h2 className="text-xl font-semibold text-slate-700">
+            <h2 className="text-xl font-semibold text-slate-800">
               {user?.name || "User"}
             </h2>
             <p className="text-gray-500">{user?.email}</p>
@@ -85,9 +106,9 @@ const Profile = () => {
           <p className="text-gray-500">No favourites added yet.</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {favourites.map((item) => (
+            {favourites.map((item, index) => (
               <div
-                key={item._id}
+                key={item._id || index}
                 className="bg-white shadow-md rounded-xl p-4 hover:shadow-lg transition"
               >
                 <img
