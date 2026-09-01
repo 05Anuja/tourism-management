@@ -8,7 +8,7 @@ const connectCloudinary = async () => {
         secure: true,
     })
 
-    console.log(process.env.CLOUDINARY_CLOUD_NAME)
+    // console.log(process.env.CLOUDINARY_CLOUD_NAME)
 }
 
 export {cloudinary}
