@@ -53,6 +53,12 @@ app.use((err, req, res, next) => {
 // const user = await userModel.find()
 // console.log(user)
 
+app.get('/', (req, res) => {
+  res.json({
+    message: "API Testing"
+  })
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Server started at PORT ${process.env.PORT}`)
 })
